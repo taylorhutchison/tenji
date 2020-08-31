@@ -1,0 +1,8 @@
+<div class="frame">
+    <ng-container *ngIf="on; else off">
+        1
+    </ng-container>
+    <ng-template #off>
+        0
+    </ng-template>
+</div>

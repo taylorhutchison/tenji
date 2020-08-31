@@ -1,0 +1,15 @@
+@import "../../style.scss";
+
+.bit {
+    display: inline-block;
+    width: $bit_width;
+    margin: $bit_margin;
+    text-align: center;
+}
+
+.calculatedValue {
+    height: $bit_height;
+    margin: $bit_margin;
+    line-height: $bit_height;
+    display: inline-block;
+}

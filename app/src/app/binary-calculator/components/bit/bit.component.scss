@@ -1,0 +1,14 @@
+@import "../../style.scss";
+
+.frame {
+    border: 1px solid #000;
+    width: $bit_width;
+    height: $bit_height;
+    text-align: center;
+    line-height: $bit_height;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    font-family: monospace;
+    font-size: 9vmin;
+}

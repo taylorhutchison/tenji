@@ -1,1 +1,12 @@
 <h1>Binary Calculator</h1>
+
+<div class="bits">
+    <ng-container *ngFor="let state of bits; index as i">
+        <div class="bit">
+            <span>{{ state ? 1 : 0 }} * 2<sup>{{bits.length - 1 - i}}</sup></span>
+            <app-bit (click)="flip(i)" [on]="state"></app-bit>
+            <span>{{ bitvalue(bits, i) }} </span>
+        </div>
+    </ng-container>
+</div>
+<div class="calculatedValue">= {{ calculate(bits) }}</div>
